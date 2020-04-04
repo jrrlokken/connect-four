@@ -30,9 +30,7 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  /* position: absolute;
-  top: 0;
-  transition: top 500ms ease-out; */
+  margin-left: 5px;
 }
 
 .p1 {
@@ -52,3 +50,16 @@ body {
   background-color: gold;
 }
 
+.falling-piece {
+  animation-name: fall-animation;
+  animation-duration: 1000ms;
+}
+
+@keyframes fall-animation {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

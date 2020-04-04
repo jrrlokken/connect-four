@@ -17,6 +17,7 @@ let board = []; // array of rows, each row is array of cells  (board[y][x])
 
 function makeBoard() {
   for (let y = 0; y < HEIGHT; y++) {
+    // make HEIGHT -1 rows of arrays with WIDTH undefined elements
     board.push(Array.from({ length: WIDTH }));
   }
 }
